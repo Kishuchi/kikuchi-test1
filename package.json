@@ -1,0 +1,17 @@
+{
+  "name": "web-calculator",
+  "version": "1.0.0",
+  "description": "Web電卓アプリケーション（デモ用）",
+  "scripts": {
+    "start": "http-server src -p 8080",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0",
+    "http-server": "^14.1.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
