@@ -52,8 +52,7 @@ body {
   border-radius: 50%;
   color: #fff;
   font-size: 1.5rem;
-  width: 65px;
-  height: 65px;
+  aspect-ratio: 1;
   cursor: pointer;
   transition: all 0.15s ease;
   display: flex;
@@ -126,7 +125,7 @@ body {
 
 .btn-zero {
   grid-column: span 2;
-  width: 100%;
+  aspect-ratio: auto;
   border-radius: 35px;
   justify-content: flex-start;
   padding-left: 26px;
@@ -139,8 +138,6 @@ body {
   }
 
   .btn {
-    width: 55px;
-    height: 55px;
     font-size: 1.3rem;
   }
 
@@ -165,8 +162,6 @@ body {
   }
 
   .btn {
-    width: 70px;
-    height: 70px;
     font-size: 1.6rem;
   }
 
