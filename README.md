@@ -1,5 +1,7 @@
 # Web電卓アプリケーション
 
+![Test and Deploy](https://github.com/Kishuchi/kikuchi-test1/actions/workflows/deploy.yml/badge.svg)
+
 デモ用のWeb電卓アプリケーションです。
 
 ## 機能
