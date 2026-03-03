@@ -8,7 +8,82 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- 背景アニメーション -->
+  <div class="background-animation">
+    <!-- 浮かぶ数字たち -->
+    <div class="floating-numbers">
+      <span class="float-num">7</span>
+      <span class="float-num">×</span>
+      <span class="float-num">3</span>
+      <span class="float-num">=</span>
+      <span class="float-num">21</span>
+      <span class="float-num">+</span>
+      <span class="float-num">8</span>
+      <span class="float-num">÷</span>
+      <span class="float-num">2</span>
+      <span class="float-num">π</span>
+      <span class="float-num">∞</span>
+      <span class="float-num">√</span>
+      <span class="float-num">42</span>
+      <span class="float-num">−</span>
+      <span class="float-num">9</span>
+    </div>
+    
+    <!-- 計算している人のシルエット -->
+    <div class="silhouettes">
+      <div class="person person-1">
+        <svg viewBox="0 0 100 150" class="person-svg">
+          <!-- 頭 -->
+          <circle cx="50" cy="20" r="15" fill="currentColor"/>
+          <!-- 体 -->
+          <path d="M50 35 L50 80 M30 55 L70 55 M50 80 L30 120 M50 80 L70 120" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <!-- 思考バブル -->
+          <circle cx="75" cy="5" r="3" fill="currentColor" class="thought-bubble"/>
+          <circle cx="82" cy="0" r="4" fill="currentColor" class="thought-bubble"/>
+          <ellipse cx="95" cy="-10" rx="12" ry="8" fill="currentColor" class="thought-bubble"/>
+        </svg>
+        <div class="thinking-math">2+2=?</div>
+      </div>
+      
+      <div class="person person-2">
+        <svg viewBox="0 0 100 150" class="person-svg">
+          <circle cx="50" cy="20" r="15" fill="currentColor"/>
+          <path d="M50 35 L50 80 M25 50 L50 65 L75 45 M50 80 L35 120 M50 80 L65 120" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="thinking-math">π×r²</div>
+      </div>
+      
+      <div class="person person-3">
+        <svg viewBox="0 0 100 150" class="person-svg">
+          <circle cx="50" cy="20" r="15" fill="currentColor"/>
+          <path d="M50 35 L50 80 M30 60 L70 50 M50 80 L30 115 M50 80 L70 115" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="thinking-math">∑n=?</div>
+      </div>
+    </div>
+    
+    <!-- 数式が流れるライン -->
+    <div class="math-lines">
+      <div class="math-line line-1">1+1=2 × 3=6 ÷ 2=3 + 7=10 − 5=5</div>
+      <div class="math-line line-2">9×9=81 √144=12 2³=8 10%=0.1</div>
+      <div class="math-line line-3">42÷6=7 8+8=16 100−1=99 5×5=25</div>
+    </div>
+    
+    <!-- パーティクル -->
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </div>
+  
   <div class="calculator">
+    <div class="calculator-glow"></div>
     <div class="display" id="display" aria-live="polite" aria-label="計算結果">0</div>
     
     <div class="buttons">
